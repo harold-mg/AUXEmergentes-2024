@@ -10,6 +10,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoryComponent } from './components/category/category.component';
 import { AutosComponent } from './components/autos/autos.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AutosComponent } from './components/autos/autos.component';
     FooterComponent,
     HomeComponent,
     CategoryComponent,
-    AutosComponent
+    AutosComponent,
+    LoginComponent,
+    RegisterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
