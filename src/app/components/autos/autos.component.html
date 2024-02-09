@@ -1,0 +1,8 @@
+<div class="autos-container">
+    <div class="auto" *ngFor="let auto of _infoAuto.autos">
+        <img [src]="auto.url" alt="{{ auto.modelo }}">
+        <h3>{{ auto.modelo }}</h3>
+        <p>{{ auto.info }}</p>
+    </div>
+</div>
+  

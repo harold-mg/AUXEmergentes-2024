@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent {
+  showAutosComponent = false;
 
+  toggleAutosComponent() {
+    this.showAutosComponent = !this.showAutosComponent;
+  }
 }

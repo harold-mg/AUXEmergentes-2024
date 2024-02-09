@@ -10,8 +10,13 @@ export class InfoPaginaService {
   info : InfoPagina = {};
   cargada = false;
 
-  constructor( private http: HttpClient) { 
+  autos: any[] = [];
 
+  constructor( private http: HttpClient) { 
+    this.cargarInfo();
+    this.cargarAutos();
+  }
+  private cargarInfo() {
     //console.log('informacion de servicio');
     this.http.get('assets/data/data-pagina.json')
       .subscribe ( (resp: InfoPagina) => {
@@ -20,6 +25,12 @@ export class InfoPaginaService {
         //console.log(resp)
         console.log( resp.email );
       })
-
   }
+  private cargarAutos() {
+    this.http.get<any[]>('https://examen-emergentes-2024-default-rtdb.firebaseio.com/autos.json')
+    .subscribe ( resp => {
+      this.autos = resp;
+    });
+  }
+
 }

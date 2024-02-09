@@ -1,9 +1,12 @@
 <div class="category-container">
     <h2>Categorías</h2>
     <div class="category-buttons">
-      <button >Autos</button>
-      <button >Aviones</button>
-      <button >Animes</button>
+      <div>
+        <button (click)="toggleAutosComponent()">Autos</button>
+        <button >Aviones</button>
+        <button >Animes</button>
+      </div>
+      <app-autos *ngIf="showAutosComponent"></app-autos>
     </div>
 </div>
 

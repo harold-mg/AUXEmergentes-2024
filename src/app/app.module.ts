@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoryComponent } from './components/category/category.component';
+import { AutosComponent } from './components/autos/autos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryComponent } from './components/category/category.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CategoryComponent
+    CategoryComponent,
+    AutosComponent
   ],
   imports: [
     BrowserModule,
