@@ -13,6 +13,7 @@ import { AutosComponent } from './components/autos/autos.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MainComponent } from './components/main/main.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MainComponent } from './components/main/main.component';
     AutosComponent,
     LoginComponent,
     RegisterComponent,
-    MainComponent
+    MainComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
